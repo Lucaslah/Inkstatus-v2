@@ -1,7 +1,7 @@
 {
     "name": "inkstatus-v2",
     "version": "1.0.0",
-    "main": "index.ts",
+    "main": "./out/index.js",
     "license": "GPL-3.0",
     "devDependencies": {
         "@types/node": "^14.14.31",
@@ -35,5 +35,9 @@
         "lint": "npx eslint src/*.ts",
         "lint:fix": "npx eslint src/*.ts --fix",
         "dev": "npx ts-node-dev --respawn src/index"
+    },
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1"
     }
 }
