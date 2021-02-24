@@ -1,4 +1,5 @@
-# Inkstatus-v2
-v2 of Inkstatus
+# InkStats v2
+A new Inkstats in Typescript
 
-## git add . && git commit -m "Initial commit"
+> A Basic Nodejs Server Status Information app.
+
