@@ -1,2 +1,59 @@
-<h1>Hello World</h1>
-<%= test %>
+<style>
+    .grid-container {
+        display: grid;
+        height: 400px;
+        align-content: center;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    
+    body {
+        background-color: #2196F3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .grid-container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+    }
+</style>
+
+<h1>
+    <center>InkStatus</center>
+</h1>
+
+<div class="grid-container">
+    <div>
+        Total Ram:
+        <%= totalRam %>
+    </div>
+    <div>
+        Platform:
+        <%= platform %>
+    </div>
+    <div>
+        CPU Model:
+        <%= CPU_model %>
+    </div>
+    <div>
+        CPU Speed:
+        <%= CPU_speed %>
+    </div>
+    <div>
+        CPU Cores:
+        <%= CUP_cores %>
+    </div>
+    <div>
+        System Uptime:
+        <%= sysUptime %>
+    </div>
+</div>
