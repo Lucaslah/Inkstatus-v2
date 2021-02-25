@@ -1,10 +1,14 @@
 # InkStatus v2
 A new InkStatus in Typescript
 
+## Badge Status
+![issues_badge](https://img.shields.io/github/issues/Lucaslah/InkStatus-v2)
+
 > A Basic Nodejs Server Status Information app.
 
 ## Table of Contents
 - [InkStatus v2](#inkstatus-v2)
+  - [Badge Status](#badge-status)
   - [Table of Contents](#table-of-contents)
     - [Requirements](#requirements)
     - [Installing](#installing)
