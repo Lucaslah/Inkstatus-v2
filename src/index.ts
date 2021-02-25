@@ -7,6 +7,8 @@ const ms = require('ms');
 const express = require('express')
 const app = express()
 
+const appport = process.env.PORT || port
+
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
@@ -39,6 +41,6 @@ const core = os.cpus()[0];
 });
 
 
-app.listen(port, () => {
-    console.log(`Server Running at: http://localhost:${port}`);
+app.listen(appport, () => {
+    console.log(`Server Running at: http://localhost:${appport}`);
 });

@@ -1,1 +1,1 @@
-export const port: string = "80"
+export const port: string = "8080"
