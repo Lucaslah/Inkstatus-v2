@@ -2,7 +2,7 @@
 A new InkStatus in Typescript
 
 ## Badge Status
-![issues_badge](https://img.shields.io/github/issues/Lucaslah/InkStatus-v2)
+![npm](https://img.shields.io/npm/v/inkstatus-v2) ![issues_badge](https://img.shields.io/github/issues/Lucaslah/InkStatus-v2) ![NPM](https://img.shields.io/npm/l/inkstatus-v2) ![node-current](https://img.shields.io/node/v/inkstatus-v2)
 
 > A Basic Nodejs Server Status Information app.
 
