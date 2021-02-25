@@ -35,10 +35,13 @@
         "watch": "npx tsc src/index.ts --watch",
         "lint": "npx eslint src/*.ts",
         "lint:fix": "npx eslint src/*.ts --fix",
-        "dev": "npx ts-node-dev --respawn src/index"
+        "dev": "npx ts-node-dev --respawn src/index",
+        "electron": "electron ./out/electron/index.js"
     },
     "dependencies": {
         "ejs": "^3.1.6",
+        "ejs-electron": "^2.1.1",
+        "electron": "^11.3.0",
         "express": "^4.17.1"
     }
 }

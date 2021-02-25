@@ -31,5 +31,5 @@ app.get('/', (req, res) => {
     });
 });
 app.listen(appport, () => {
-    console.log(`Server Running at: http://localhost:${appport}`);
+    console.log(`InkStatus is Running at: http://localhost:${appport}`);
 });
