@@ -29,14 +29,14 @@ This is v2 of [Inkstatus](https://github.com/Lucaslah/InkStatus)
 
 ### Running the App
 1. Install InkStatus v2
-2. Run: `inkstatus-v2` in your terminal
-3. If you want to run InkStatus on a different port do: `PORT=port inkstatus-v2`
+2. Run: `inkstatus-v2 server` in your terminal
+3. If you want to run InkStatus on a different port do: `inkstatus-v2 serve --port=PORT`
 
 ### Building for Source
 1. Clone the Repo: `git clone https://github.com/Lucaslah/InkStatus-v2.git`
 2. `cd InkStatus-v2`
 3. Install Required Stuff: `yarn` or `npm install`
-4. Start the app: `yarn start` or `npm run start`
+4. Start the app: `yarn start serve` or `npm start serve`
 
 ### Status of Project
 - [x] Get Started on Backend
@@ -47,4 +47,3 @@ This is v2 of [Inkstatus](https://github.com/Lucaslah/InkStatus)
 ### Notes
 - This app is still in develment, If you find any bugs open an issue
 - By Default this app runs on port `8080`
-- When Building for Source with `npm` delate the `yarn.lock` file
