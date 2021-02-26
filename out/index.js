@@ -1,35 +1,57 @@
+#!/usr/bin/env node
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const config_1 = require("./config");
-const path = require("path");
-const os = require("os");
-const ms = require('ms');
+const chalk_init = require('./functions/chalk');
+const sections = require('./functions/command_line_usage');
+const commandLineUsage = require('command-line-usage');
 const express = require('express');
 const app = express();
-const appport = process.env.PORT || config_1.port;
+const path = require("path");
+const stats = require('./stats');
+// Yargs
+const yargs = require('yargs');
+const { hideBin } = require('yargs/helpers');
+const appport = process.env.PORT || config_1.port || 8080;
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
-    // Get MEM Info:
-    var total_memory = os.totalmem();
-    var total_mem_in_kb = total_memory / 1024;
-    var total_mem_in_mb = total_mem_in_kb / 1024;
-    var total_mem_in_gb = total_mem_in_mb / 1024;
-    total_mem_in_kb = Math.floor(total_mem_in_kb);
-    total_mem_in_mb = Math.floor(total_mem_in_mb);
-    total_mem_in_gb = Math.floor(total_mem_in_gb);
-    total_mem_in_mb = total_mem_in_mb % 1024;
-    total_mem_in_kb = total_mem_in_kb % 1024;
-    total_memory = total_memory % 1024;
-    const core = os.cpus()[0];
     res.render(path.resolve(`views/index.ejs`), {
-        totalRam: `${total_mem_in_gb + " GB "}`,
-        platform: process.platform,
-        CPU_model: core.model,
-        CPU_speed: `${core.speed}Mhz`,
-        CUP_cores: os.cpus().length,
-        sysUptime: `${ms(os.uptime() * 1000, { long: true })}`
+        totalRam: stats.totalRam,
+        platform: stats.platform,
+        CPU_model: stats.CPU_model,
+        CPU_speed: stats.CPU_speed,
+        CUP_cores: stats.CUP_cores,
+        sysUptime: stats.sysUptime
     });
 });
-app.listen(appport, () => {
-    console.log(`Server Running at: http://localhost:${appport}`);
-});
+const args = process.argv.slice(2);
+if (!args[0])
+    console.log(commandLineUsage(sections));
+yargs(hideBin(process.argv))
+    .scriptName("inkstatus")
+    .command('serve [port]', 'starts the server', (yargs) => {
+    yargs
+        .positional('port', {
+        describe: 'port to bind on',
+        default: appport
+    });
+}, (argv) => {
+    if (argv.debug)
+        console.info(`Running in Debeg Mode`);
+    if (config_1.run_with_color === "true") {
+        app.listen(argv.port, () => {
+            chalk_init(argv);
+        });
+    }
+    else {
+        app.listen(argv.port, () => {
+            console.log(`InkStatus is Running at: http://localhost:${argv.port}`);
+        });
+    }
+})
+    .option('debug', {
+    alias: 'd',
+    type: 'boolean',
+    description: 'Run in debug mode'
+})
+    .argv;
