@@ -6,14 +6,17 @@
     "license": "GPL-3.0",
     "devDependencies": {
         "@types/node": "^14.14.31",
+        "@types/yargs": "^16.0.0",
         "@typescript-eslint/eslint-plugin": "^4.15.2",
         "@typescript-eslint/parser": "^4.15.2",
+        "command-line-usage": "^6.1.1",
         "eslint": "^7.20.0",
         "eslint-config-node": "^4.1.0",
         "eslint-plugin-node": "^11.1.0",
         "ts-node": "^9.1.1",
         "ts-node-dev": "^1.1.2",
-        "typescript": "^4.2.2"
+        "typescript": "^4.2.2",
+        "yargs": "^16.2.0"
     },
     "description": "Inkstats v2 (A Server Stats App)",
     "author": "Lucas Petrino",
@@ -39,9 +42,12 @@
         "electron": "electron ./out/electron/index.js"
     },
     "dependencies": {
+        "chalk": "^4.1.0",
         "ejs": "^3.1.6",
         "ejs-electron": "^2.1.1",
         "electron": "^11.3.0",
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "install": "^0.13.0",
+        "npm": "^7.6.0"
     }
 }
