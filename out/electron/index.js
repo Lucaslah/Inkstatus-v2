@@ -2,9 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const electron_1 = require("electron");
 const createWindow = require("../functions/createWindow");
-const path = require('path');
-const ejs = require("../functions/ejs_conf");
-ejs();
+const ejse = require("../functions/ejs_conf");
+ejse();
 electron_1.app.whenReady().then(() => {
     createWindow();
     electron_1.app.on('activate', function () {
