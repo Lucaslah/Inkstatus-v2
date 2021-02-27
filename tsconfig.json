@@ -9,11 +9,11 @@
   ],
   "exclude": [
     "node_modules",
-    "__tests__"
+    "out"
   ],
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"
     }
-  }
+  },
 }
