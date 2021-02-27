@@ -1,6 +1,6 @@
 {
     "name": "inkstatus-v2",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "./out/index.js",
     "bin": "./out/index.js",
     "license": "GPL-3.0",
@@ -41,7 +41,10 @@
         "lint": "npx eslint src/*.ts",
         "lint:fix": "npx eslint src/*.ts --fix",
         "dev": "npx ts-node-dev --respawn src/index",
-        "electron": "electron ./out/electron/index.js"
+        "electron": "electron ./out/electron/index.js",
+        "build-publish": "yarn build && yarn publish",
+        "build-publish:cleanup": "rm -r out",
+        "scripts:git": "npx ts-node scripts/git.ts"
     },
     "dependencies": {
         "@types/node": "^14.14.31",
