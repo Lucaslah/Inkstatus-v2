@@ -29,7 +29,7 @@ This is v2 of [Inkstatus](https://github.com/Lucaslah/InkStatus)
 
 ### Running the App
 1. Install InkStatus v2
-2. Run: `inkstatus-v2 server` in your terminal
+2. Run: `inkstatus-v2 serve` in your terminal
 3. If you want to run InkStatus on a different port do: `inkstatus-v2 serve --port=PORT`
 
 ### Building for Source
