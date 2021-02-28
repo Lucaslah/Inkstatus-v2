@@ -7,7 +7,7 @@
   A Basic Nodejs Server Status Information app.
   </p>
 <p align="center">
-  <img alt="npm" src="https://img.shields.io/npm/v/inkstatus-v2">
+  <img alt="npm" src="https://img.shields.io/npm/v/inkstats-v2">
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucaslah/inkstats-v2">
   <img alt="NPM" src="https://img.shields.io/npm/l/inkstats-v2">
   <img alt="npm" src="https://img.shields.io/npm/dw/inkstats-v2">
