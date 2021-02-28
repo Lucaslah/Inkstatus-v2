@@ -1,22 +1,31 @@
-# InkStatus v2
-A new InkStatus in Typescript
+<h1 align="center">InkStats v2</h1>
 
-## Badge Status
-![npm](https://img.shields.io/npm/v/inkstatus-v2) ![issues_badge](https://img.shields.io/github/issues/Lucaslah/InkStatus-v2) ![NPM](https://img.shields.io/npm/l/inkstatus-v2) ![node-current](https://img.shields.io/node/v/inkstatus-v2)
-
-> A Basic Nodejs Server Status Information app.
+<p align="center">
+  A new InkStatus in Typescript
+</p>
+<p align="center">
+  A Basic Nodejs Server Status Information app.
+  </p>
+<p align="center">
+  <img alt="npm" src="https://img.shields.io/npm/v/inkstatus-v2">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucaslah/inkstatus-v2">
+  <img alt="NPM" src="https://img.shields.io/npm/l/inkstatus-v2">
+  <img alt="npm" src="https://img.shields.io/npm/dw/inkstatus-v2">
+  <img alt="depen" src="https://david-dm.org/Lucaslah/Inkstatus-v2.svg">
+  </p>
+  <p align="center">
+  <img alt="npmpkg" src="https://nodei.co/npm/inkstatus-v2.png" herf="https://npmjs.org/package/inkstatus-v2">
+  </p>
 
 ## Table of Contents
-- [InkStatus v2](#inkstatus-v2)
-  - [Badge Status](#badge-status)
-  - [Table of Contents](#table-of-contents)
-    - [Requirements](#requirements)
-    - [Installing](#installing)
-    - [About this Project](#about-this-project)
-    - [Running the App](#running-the-app)
-    - [Building for Source](#building-for-source)
-    - [Status of Project](#status-of-project)
-    - [Notes](#notes)
+- [Table of Contents](#table-of-contents)
+  - [Requirements](#requirements)
+  - [Installing](#installing)
+  - [About this Project](#about-this-project)
+  - [Running the App](#running-the-app)
+  - [Building for Source](#building-for-source)
+  - [Status of Project](#status-of-project)
+  - [Notes](#notes)
 
 ### Requirements
 - `npm` or `yarn`
