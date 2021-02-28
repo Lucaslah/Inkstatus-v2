@@ -1,6 +1,6 @@
 {
-    "name": "inkstatus-v2",
-    "version": "1.0.4",
+    "name": "inkstats-v2",
+    "version": "1.1.0",
     "main": "./out/index.js",
     "bin": "./out/index.js",
     "license": "GPL-3.0",
