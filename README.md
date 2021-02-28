@@ -1,7 +1,11 @@
-# InkStatus v2
-A new InkStatus in Typescript
+<h1 align="center">InkStats v2</h1>
 
-![npm](https://img.shields.io/npm/v/inkstatus-v2) ![issues_badge](https://img.shields.io/github/issues/Lucaslah/InkStatus-v2) ![NPM](https://img.shields.io/npm/l/inkstatus-v2) ![node-current](https://img.shields.io/node/v/inkstatus-v2)
+<p align="center">
+  A new InkStatus in Typescript
+</p>
+<p align="center">
+  <img alt="npm" src="https://img.shields.io/npm/v/inkstatus-v2">
+  </p>
 
 > A Basic Nodejs Server Status Information app.
 
