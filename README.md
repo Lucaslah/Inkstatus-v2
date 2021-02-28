@@ -10,6 +10,7 @@
   <img alt="npm" src="https://img.shields.io/npm/v/inkstatus-v2">
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucaslah/inkstatus-v2">
   <img alt="NPM" src="https://img.shields.io/npm/l/inkstatus-v2">
+  <img alt="npm" src="https://img.shields.io/npm/dw/inkstatus-v2">
   </p>
 
 ## Table of Contents
