@@ -4,10 +4,11 @@
   A new InkStatus in Typescript
 </p>
 <p align="center">
+  A Basic Nodejs Server Status Information app.
+  </p>
+<p align="center">
   <img alt="npm" src="https://img.shields.io/npm/v/inkstatus-v2">
   </p>
-
-> A Basic Nodejs Server Status Information app.
 
 ## Table of Contents
 - [InkStatus v2](#inkstatus-v2)
