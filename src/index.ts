@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { port, run_with_color, appName } from "./config";
 import * as express from "express";
 
