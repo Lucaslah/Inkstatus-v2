@@ -46,7 +46,7 @@
         "build-publish:cleanup": "rm -r out",
         "scripts:git": "npx ts-node scripts/git.ts",
         "testing:build": "yarn build && node . serve -d",
-        "test": "npx ts-node tests/test.ts"
+        "test": "npx ts-node tests/tests.ts"
     },
     "dependencies": {
         "@types/node": "^14.14.31",
