@@ -44,7 +44,8 @@
         "electron": "electron ./out/electron/index.js",
         "build-publish": "yarn build && yarn publish",
         "build-publish:cleanup": "rm -r out",
-        "scripts:git": "npx ts-node scripts/git.ts"
+        "scripts:git": "npx ts-node scripts/git.ts",
+        "testing:build": "yarn build && node . serve -d"
     },
     "dependencies": {
         "@types/node": "^14.14.31",
