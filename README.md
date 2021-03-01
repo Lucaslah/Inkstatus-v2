@@ -1,4 +1,7 @@
-<h1 align="center">InkStats v2</h1>
+<h1 align="center">
+<p>InkStats v2</p>
+<img alt="npm" src="InkStats.png">
+</h1>
 
 <p align="center">
   A new InkStats in Typescript
