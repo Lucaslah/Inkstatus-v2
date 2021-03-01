@@ -1,5 +1,9 @@
 const commandLineUsage = require('command-line-usage')
 
+import { appName, GitHubLink } from "../config";
+
+const appConfigName = appName.toLowerCase()
+
 
 const optionDefinitions = [
   {
@@ -20,13 +24,13 @@ const optionDefinitions = [
 
 const sections = [
   {
-    header: 'InkStatus',
+    header: appName,
     content: 'A Nodejs Server Stats App'
   },
   {
     header: 'Commands',
     content: [
-        '$ inkstatus serve'
+        `$ ${appConfigName} serve`
       ]
   },
   {
@@ -38,16 +42,16 @@ const sections = [
     content: [
       {
         desc: '1. Stats the HTTP Server ',
-        example: '$ inkstatus serve [port]  starts the server'
+        example: `$ ${appConfigName} serve [port]  starts the server`
       },
       {
         desc: '2. Debug Mode ',
-        example: '$ inkstatus server --debug'
+        example: `$ ${appConfigName} server --debug`
       }
     ]
   },
   {
-    content: 'GitHub: {underline https://github.com/lucaslah/inkstatus-v2}'
+    content: `GitHub: {underline ${GitHubLink}}`
   }
 ]
 

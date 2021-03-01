@@ -11,7 +11,7 @@ function createWindow () {
       }
     })
   
-    mainWindow.loadFile(path.resolve(`views/index.ejs`))
+    mainWindow.loadFile(`../../views/index.ejs`)
   
   }
 

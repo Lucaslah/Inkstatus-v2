@@ -9,6 +9,7 @@ ejse.data('CPU_model', stats.CPU_model)
 ejse.data('CPU_speed', stats.CPU_speed)
 ejse.data('CUP_cores', stats.CUP_cores)
 ejse.data('sysUptime', stats.sysUptime)
+ejse.data('appName', stats.appName)
 
 }
 
