@@ -11,7 +11,7 @@
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucaslah/inkstats-v2">
   <img alt="NPM" src="https://img.shields.io/npm/l/inkstats-v2">
   <img alt="npm" src="https://img.shields.io/npm/dw/inkstats-v2">
-  <img alt="depen" src="https://david-dm.org/Lucaslah/inkstats-v2.svg">
+  <img alt="depen" src="https://david-dm.org/Lucaslah/InkStats-v2.svg">
   </p>
   <p align="center">
   <img alt="npmpkg" src="https://nodei.co/npm/inkstats-v2.png" herf="https://npmjs.org/package/inkstats-v2">
