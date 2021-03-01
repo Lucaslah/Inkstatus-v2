@@ -1,7 +1,7 @@
 <h1 align="center">InkStats v2</h1>
 
 <p align="center">
-  A new InkStatus in Typescript
+  A new InkStats in Typescript
 </p>
 <p align="center">
   A Basic Nodejs Server Status Information app.
@@ -31,19 +31,19 @@
 - `npm` or `yarn`
 
 ### Installing
-`npm i -g inkstatus-v2` or `yarn add inkstatus-v2`
+`npm i -g inkstats-v2` or `yarn add inkstats-v2`
 
 ### About this Project
 This is v2 of [Inkstatus](https://github.com/Lucaslah/InkStatus)
 
 ### Running the App
-1. Install InkStatus v2
-2. Run: `inkstatus-v2 serve` in your terminal
-3. If you want to run InkStatus on a different port do: `inkstatus-v2 serve --port=PORT`
+1. Install InkStats v2 [Here](#Installing)
+2. Run: `inkstats-v2 serve` in your terminal
+3. If you want to run InkStats on a different port do: `inkstats-v2 serve --port=PORT`
 
 ### Building for Source
-1. Clone the Repo: `git clone https://github.com/Lucaslah/InkStatus-v2.git`
-2. `cd InkStatus-v2`
+1. Clone the Repo: `git clone https://github.com/Lucaslah/InkStats-v2.git`
+2. `cd InkStats-v2`
 3. Install Required Stuff: `yarn` or `npm install`
 4. Start the app: `yarn start serve` or `npm start serve`
 
