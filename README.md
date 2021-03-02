@@ -57,7 +57,8 @@ This is v2 of [Inkstatus](https://github.com/Lucaslah/InkStatus)
 - [ ] Finish Backend
 - [ ] Finish Frontend
 
-### Conteriuting 
+### Contributing
+[Press Here](contributing.md)
 
 ### Notes
 - This app is still in develment, If you find any bugs open an issue
