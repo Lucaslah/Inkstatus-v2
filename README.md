@@ -1,6 +1,6 @@
 <h1 align="center">
 <p>InkStats v2</p>
-<img alt="npm" src="InkStats.png">
+<img alt="npm" src="img/InkStats.png">
 </h1>
 
 <p align="center">
@@ -28,6 +28,7 @@
   - [Running the App](#running-the-app)
   - [Building for Source](#building-for-source)
   - [Status of Project](#status-of-project)
+  - [Conteriuting](#conteriuting)
   - [Notes](#notes)
 
 ### Requirements
@@ -55,6 +56,8 @@ This is v2 of [Inkstatus](https://github.com/Lucaslah/InkStatus)
 - [x] Get started on Frontend
 - [ ] Finish Backend
 - [ ] Finish Frontend
+
+### Conteriuting 
 
 ### Notes
 - This app is still in develment, If you find any bugs open an issue
