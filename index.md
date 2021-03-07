@@ -1,8 +1,23 @@
-## Welcome to GitHub Pages
+<h1 align="center">
+<img alt="npm" src="img/InkStats.png">
+</h1>
 
-You can use the [editor on GitHub](https://github.com/Lucaslah/InkStats-v2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<p align="center">
+  A new InkStats in Typescript
+</p>
+<p align="center">
+  A Basic Nodejs Server Status Information app.
+  </p>
+<p align="center">
+  <img alt="npm" src="https://img.shields.io/npm/v/inkstats-v2">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucaslah/inkstats-v2">
+  <img alt="NPM" src="https://img.shields.io/npm/l/inkstats-v2">
+  <img alt="npm" src="https://img.shields.io/npm/dw/inkstats-v2">
+  <img alt="depen" src="https://david-dm.org/Lucaslah/inkstats-v2.svg">
+  </p>
+  <p align="center">
+  <img alt="npmpkg" src="https://nodei.co/npm/inkstats-v2.png" herf="https://npmjs.org/package/inkstats-v2">
+  </p>
 
 ### Markdown
 
