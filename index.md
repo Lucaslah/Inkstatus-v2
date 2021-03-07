@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="npm" src="img/InkStats.png">
+<img alt="npm" src="8F2D7C6C-A2B5-4D0D-AACA-1719AD9BB1AF.jpeg">
 </h1>
 
 <p align="center">
