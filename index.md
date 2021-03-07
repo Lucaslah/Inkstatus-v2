@@ -19,7 +19,7 @@
   <img alt="npmpkg" src="https://nodei.co/npm/inkstats-v2.png" herf="https://npmjs.org/package/inkstats-v2">
   </p>
 
-### Markdown
+### InkStats CLI
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -43,10 +43,10 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### InkStats Module
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Lucaslah/InkStats-v2/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Right now the InkStats Module is not public yet, when I finish develment on it, it will be public.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with InkStats CLI or Module? Check out the [documentation](https://example.com) or [contact support](https://example.com)
