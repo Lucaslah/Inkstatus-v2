@@ -23,8 +23,8 @@
 
 InkStats CLI can be downloaded with npm or yarn
 
-- npm: npm i -g inkstats-v2
-- yarn yarn add inkstats-v2
+- npm: `npm i -g inkstats-v2`
+- yarn `yarn add inkstats-v2`
 
 ### InkStats Module
 
