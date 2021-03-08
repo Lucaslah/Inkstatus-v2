@@ -30,6 +30,12 @@ InkStats CLI can be downloaded with npm or yarn
 
 Right now the InkStats Module is not public yet, when I finish develment on it, it will be public.
 
+### Development: Building from source
+1. Clone the Repo: `git clone https://github.com/Lucaslah/InkStats-v2.git`
+2. `cd InkStats-v2`
+3. Install Required Stuff: `yarn` or `npm install`
+4. Start the app: `yarn start serve` or `npm start serve`
+
 ### Support or Contact
 
 Having trouble with InkStats CLI or Module? Check out the [documentation](https://example.com) or [contact support](https://example.com)
