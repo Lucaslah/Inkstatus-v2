@@ -38,4 +38,4 @@ Right now the InkStats Module is not public yet, when I finish develment on it, 
 
 ### Support or Contact
 
-Having trouble with InkStats CLI or Module? Check out the [documentation](https://example.com) or [contact support](https://example.com)
+Having trouble with InkStats CLI or Module? Check out the [documentation](https://readthedocs.org/projects/inkstatus-v2/) or [contact support](https://example.com)
