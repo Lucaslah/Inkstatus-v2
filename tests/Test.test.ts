@@ -1,4 +1,4 @@
-const app = require('../out/app')
+import app from '../out/app'
 const request = require("supertest")
 
 describe("Express Server Root", () => {
