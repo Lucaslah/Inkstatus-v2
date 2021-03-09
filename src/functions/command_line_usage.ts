@@ -1,5 +1,3 @@
-const commandLineUsage = require('command-line-usage')
-
 import { appName, GitHubLink } from "../config";
 
 const appConfigName = appName.toLowerCase()
@@ -55,4 +53,4 @@ const sections = [
   }
 ]
 
-module.exports = sections
+export default sections

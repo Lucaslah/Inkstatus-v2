@@ -1,9 +1,9 @@
 import { port, run_with_color, appName } from "./config";
 import * as express from "express";
-const app = require('./app')
+import app from './app'
 
-const chalk_init = require('./functions/chalk')
-const sections = require('./functions/command_line_usage')
+import chalk_init from './functions/chalk'
+import sections from './functions/command_line_usage'
 
 const commandLineUsage = require('command-line-usage')
 

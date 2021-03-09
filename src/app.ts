@@ -30,4 +30,4 @@ app.use('/', indexRouter);
     res.render(`error`);
   });
 
-module.exports = app;
+export default app;
