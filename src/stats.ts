@@ -17,17 +17,17 @@ const ms = require('ms');
  
  const core = os.cpus()[0];
 
- const ramTotal = total_mem_in_gb + " GB"
+ const ramTotal = total_mem_in_gb
  const platform1 = os.type() || process.platform
  const modelCPU = core.model
- const speedCPU = core.speed + "MHz"
+ const speedCPU = core.speed // MHz
  const coresCPU = os.cpus().length
- const uptimesys = ms(os.uptime() * 1000, { long: true })
+ const uptimesys = os.uptime() * 1000
 
 
- export const totalRam: string = ramTotal
+ export const totalRam: number = ramTotal
  export const platform: string = platform1
  export const CPU_model: string = modelCPU
- export const CPU_speed: string = speedCPU
- export const CPU_cores: string = coresCPU
- export const sysUptime: string = uptimesys
+ export const CPU_speed: number = speedCPU
+ export const CPU_cores: number = coresCPU
+ export const sysUptime: number = uptimesys

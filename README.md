@@ -4,11 +4,10 @@
 </h1>
 
 <p align="center">
-  A new InkStats in Typescript
-</p>
-<p align="center">
-  A Basic Nodejs Server Status Information app.
+  A Nodejs Server Stats & Information app.
   </p>
+
+
 <p align="center">
   <img alt="npm" src="https://img.shields.io/npm/v/inkstats-v2">
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucaslah/inkstats-v2">
@@ -23,43 +22,122 @@
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
-  - [Installing](#installing)
-  - [About this Project](#about-this-project)
-  - [Running the App](#running-the-app)
-  - [Building for Source](#building-for-source)
-  - [Status of Project](#status-of-project)
-  - [Conteriuting](#conteriuting)
-  - [Notes](#notes)
+  - [Installing Globlly](#installing-globlly)
+  - [Installing as a Module](#installing-as-a-module)
+  - [Information that InkStats Shows](#information-that-inkstats-shows)
+- [Getting Started: CLI](#getting-started-cli)
+- [Getting Started: Module](#getting-started-module)
+- [Local Development](#local-development)
+- [CLI Options](#cli-options)
+- [Module Options](#module-options)
+- [Module Commands](#module-commands)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
 
 ### Requirements
 - `npm` or `yarn`
+- Nodejs
 
-### Installing
-`npm i -g inkstats-v2` or `yarn add inkstats-v2`
+### Installing Globlly
+- npm: `npm i -g inkstats-v2`
+- yarn: `yarn add globle inkstats-v2`
 
-### About this Project
-This is v2 of [Inkstatus](https://github.com/Lucaslah/InkStatus)
+### Installing as a Module
+- npm: `npm i --save inkstats-v2`
+- yarn: `yarn add inkstats-v2`
 
-### Running the App
-1. Install InkStats v2 [Here](#Installing)
-2. Run: `inkstats-v2 serve` in your terminal
-3. If you want to run InkStats on a different port do: `inkstats-v2 serve --port=PORT`
+### Information that InkStats Shows
+- Total Ram
+- CPU Speed
+- CPU Cores
+- CPU Information
+- Platform
+- Computer Uptime
+- More Coming soon
 
-### Building for Source
+## Getting Started: CLI
+1. Install InkStats v2 [See Installing Globlly](#installing-globlly)
+2. In your Terminal run `inkstats-v2 serve` to start a basic InkStats Server
+3. Read [CLI Options](#cli-options) for more info on the CLI
+
+
+## Getting Started: Module
+1. Install InkStats v2 (Module)
+2. Make a New InkStats Instance in your nodejs project
+```javascript
+// InkStats Module Example
+
+const { InkStats } = require('inkstats-v2') // Require InkStats
+
+/**
+ * Makes a New InkStats Instance
+ */
+const server = new InkStats({
+    /**
+     * The Port you want your InkStats Instance to run on
+     * Not Required, Defaults to port 8080
+     */
+    port: 8080,
+    /**
+     * A Message to be logged to your Console when your InkStats Instance Starts
+     * Not Required, Defaults to Nothing (Nothing will be logged to your Console)
+     * {port} will output will the port your InkStats Instance is running on
+     */
+    message: 'Hello {port}',
+    /**
+     * Sets the Title of your InkStats Instance, It will show on your InkStats Home Page
+     * Not Required, Defaults to InkStats
+     */
+    name: 'My Epic Name'
+})
+
+// Usage Examples
+
+/**
+ * Stops your InkStats Instance
+ * Required to Start your InkStats Process
+ */
+server.start()
+
+/**
+ * Stops your InkStats Instance
+ * Not Required, Killing the node process will also stop InkStats
+ */
+server.kill()
+```
+3. For More Examples Check the Examples Folder in the Repo
+4. See all the Module Options [here](#module-options) & Module Commands [here](#module-commands)
+
+## Local Development
 1. Clone the Repo: `git clone https://github.com/Lucaslah/InkStats-v2.git`
-2. `cd InkStats-v2`
+2. Chnage to the Dir you cloned: `cd InkStats-v2`
 3. Install Required Stuff: `yarn` or `npm install`
 4. Start the app: `yarn start serve` or `npm start serve`
 
-### Status of Project
-- [x] Get Started on Backend
-- [x] Get started on Frontend
-- [ ] Finish Backend
-- [ ] Finish Frontend
+## CLI Options
+| Flag     | Allies | Usage        | Description                                |   |
+|----------|--------|--------------|--------------------------------------------|---|
+| help     |        | --help       | Shows the Help  Menu                       |   |
+| version  |        | --version    | Shows the InkStats version                 |   |
+| debug    | -d     | --debug      | Runs the app in debug mode                 |   |
+| no_color | -n     | --no_color   | Removes the Color from the CLI             |   |
+| port     | -p     | serve --port | Changes the Port to run InkStats to run on |   |
 
-### Contributing
-[Press Here](contributing.md)
+## Module Options
+| Option  | Usage           | Description                                                                       | Required |
+|---------|-----------------|-----------------------------------------------------------------------------------|----------|
+| port    | port: number    | The Port to Run InkStats On                                                       | n        |
+| message | message: string | A Message to be logged to your Console when InkStats Starts                       | n        |
+| name    | name: string    | Sets the Title of your InkStats Instance, It will show on your InkStats Home Page | n        |
 
-### Notes
-- This app is still in develment, If you find any bugs open an issue
-- By Default this app runs on port `8080`
+## Module Commands
+| Option | Usage            | Description                |
+|--------|------------------|----------------------------|
+| start  | .start() | Starts the InkStats Server |
+| kill   | .kill()  | Stops the InkStats Server  |
+
+## Documentation
+See the [Wiki](https://github.com/Lucaslah/InkStats-v2/wiki)
+
+## Contributing
+[See Contributing.md](contributing.md)

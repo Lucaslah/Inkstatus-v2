@@ -1,12 +1,11 @@
-import * as express from "express";
-import * as stats from "../stats";
-import { appName } from "../config"
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express = require("express");
+const stats = require("../stats");
+const config_1 = require("../config");
 const router = express.Router();
-
 /* GET home page. */
 router.get('/', (req, res) => {
-
     res.render(`index`, {
         totalRam: stats.totalRam,
         platform: stats.platform,
@@ -15,11 +14,7 @@ router.get('/', (req, res) => {
         CUP_cores: stats.CPU_cores,
         sysUptime: stats.sysUptime,
         // @ts-ignore
-        appName: global.nametitle || appName
-
+        appName: global.nametitle || config_1.appName
     });
 });
-
-
-
-export default router;
+exports.default = router;
